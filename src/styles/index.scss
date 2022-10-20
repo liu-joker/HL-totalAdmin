@@ -1,0 +1,113 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+
+//main-container全局样式
+
+$mainheight: 134px;
+.app-main{
+  min-height: calc(100vh - 134px);
+  background-color: #EFF1F4;
+}
+
+.app-container {
+  padding:0 15px 15px 15px;
+  min-height: calc(100vh - 204px);
+  > .content{
+    border-radius: 5px;
+  }
+  > .header{
+    padding: 15px 0;
+  }
+}
+
+.CM_content_foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+}
+.CM_head {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.el-form-item{
+  .info {
+    line-height: normal;
+    margin: 0;
+    color: #E6A23C;
+    font-size: 0.75rem;
+  }
+}
+.el-loading-mask{
+  z-index: 4000;
+}
+
